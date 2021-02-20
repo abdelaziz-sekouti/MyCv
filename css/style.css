@@ -11,8 +11,7 @@
 body {
 	background: #ddd;
 }
-.col-xs-12.col-md-6 {
-}
+
 .hello ul li a {
 	color: #000;
 }
@@ -34,4 +33,9 @@ body {
 }
 
 @media (max-width: 500px) {
+	.container {
+		width: 100px;
+		margin: 0;
+		padding: 0;
+	}
 }
