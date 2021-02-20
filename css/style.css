@@ -32,11 +32,10 @@ body {
 	margin-top: 70px;
 }
 
-@media (max-width: 500px) {
+@media all (max-width: 500px) {
 	.container,
 	.row,
-	.col-xs-12,
-	.panel-group {
+	.col-xs-12 {
 		width: 100px;
 		margin: 0;
 		padding: 0;
