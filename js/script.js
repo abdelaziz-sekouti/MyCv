@@ -13,6 +13,6 @@ function deploier(e) {
 			anc.firstElementChild.classList.remove('glyphicon-chevron-down');
 		});
 		e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
-		anc.firstElementChild.classList.setAttribute('title', '');
+		anc.firstElementChild.setAttribute('title', '');
 	}
 }
