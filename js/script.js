@@ -13,4 +13,5 @@ function deploier(e) {
 		});
 	}
 	e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
+	e.target.firstElementChild.classList.toggle('glyphicon-chevron-right');
 }
