@@ -1,36 +1,37 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+* ul {
+	margin-left: 20px;
+}
 body {
-    background: #ddd;
+	background: #ddd;
 }
-
+.col-xs-12.col-md-6 {
+}
 .hello ul li a {
-    color: #000;
-}
-
-* a {
-    /*    color: #fff;*/
+	color: #000;
 }
 
 * h4,
 * h1 {
-    /*    background: #0c0;*/
-    /*    color: aliceblue;*/
-    padding: 10px;
+	padding: 10px;
 }
-
-.panel-title > a {
-
-    /*    color: aliceblue;*/
-}
-
-.panel-title > a label {
-
-    color: #ccc;
+.panel-title > a span {
+	color: #ccc;
 }
 
 .panel-heading {
-    padding: 0;
+	padding: 0;
 }
 
 .container {
-    margin-top: 70px;
+	margin-top: 70px;
+}
+
+@media (max-width: 500px) {
 }
