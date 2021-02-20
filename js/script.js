@@ -9,14 +9,14 @@ function deploier(e) {
 	if (e.target.classList.contains('ancre')) {
 		ancre.forEach(function(anc) {
 			anc.firstElementChild.classList.add('glyphicon-chevron-right');
-			anc.firstElementChild.setAttribute('title', 'click to see infos');
+			// anc.firstElementChild.setAttribute('title', 'click to see infos');
 			anc.firstElementChild.classList.remove('glyphicon-chevron-down');
 		});
 	}
 	else {
-		ancre.forEach(function(anc) {
-			anc.firstElementChild.setAttribute('title', '');
-		});
+		// ancre.forEach(function(anc) {
+		// 	anc.firstElementChild.setAttribute('title', '');
+		// });
 		anc.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
 	}
 }
