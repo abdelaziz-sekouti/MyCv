@@ -44,4 +44,7 @@ body {
 	img {
 		margin: auto;
 	}
+	body {
+		background: rgb(49, 49, 58);
+	}
 }
