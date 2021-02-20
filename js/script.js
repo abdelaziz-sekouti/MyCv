@@ -7,14 +7,14 @@ ancre.forEach(function(ht) {
 
 function deploier(e) {
 	if (e.target.classList.contains('panel-title')) {
-		if (e.target.firstElementChild.classList.contains('ancre')) {
+		if (e.target.firstElementChild.firstElementChild.classList.contains('glyphicon-chevron-right')) {
 			ancre.forEach(function(anc) {
 				anc.firstElementChild.classList.add('glyphicon-chevron-right');
 				anc.firstElementChild.classList.remove('glyphicon-chevron-down');
 			});
 		}
 		else {
-			anc.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
+			e.target.firstElementChild.firstElementChild.classList.toggle('glyphicon-chevron-down');
 		}
 	}
 }
