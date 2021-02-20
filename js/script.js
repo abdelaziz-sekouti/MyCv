@@ -9,10 +9,10 @@ function deploier(e) {
 	if (e.target.classList.contains('ancre')) {
 		ancre.forEach(function(anc) {
 			anc.firstElementChild.classList.add('glyphicon-chevron-right');
-			anc.firstElementChild.setAttribute('title', 'click to see infos');
+			anc.setAttribute('title', 'click to see infos');
 			anc.firstElementChild.classList.remove('glyphicon-chevron-down');
 		});
+		anc.setAttribute('title', '');
 		e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
-		anc.firstElementChild.setAttribute('title', '');
 	}
 }
