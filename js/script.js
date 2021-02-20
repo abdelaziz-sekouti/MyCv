@@ -12,7 +12,11 @@ function deploier(e) {
 			anc.setAttribute('title', 'click to see infos');
 			anc.firstElementChild.classList.remove('glyphicon-chevron-down');
 		});
-		anc.setAttribute('title', '');
-		e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
+	}
+	else {
+		ancre.forEach(function(anc) {
+			anc.setAttribute('title', '');
+			e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
+		});
 	}
 }
