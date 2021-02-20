@@ -7,7 +7,7 @@ ancre.forEach(function(ht) {
 
 function deploier(e) {
 	if (e.target.classList.contains('panel-title')) {
-		if (e.target.classList.contains('ancre')) {
+		if (e.target.firstElementChild.classList.contains('ancre')) {
 			ancre.forEach(function(anc) {
 				anc.firstElementChild.classList.add('glyphicon-chevron-right');
 				anc.firstElementChild.classList.remove('glyphicon-chevron-down');
