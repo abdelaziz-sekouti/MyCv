@@ -12,7 +12,5 @@ function deploier(e) {
 			anc.firstElementChild.classList.remove('glyphicon-chevron-down');
 		});
 	}
-	else {
-		e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
-	}
+	e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
 }
