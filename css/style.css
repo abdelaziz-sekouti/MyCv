@@ -32,7 +32,7 @@ body {
 	margin-top: 70px;
 }
 
-@media all (max-width: 500px) {
+@media (max-width: 500px) {
 	.container,
 	.row,
 	.col-xs-12 {
