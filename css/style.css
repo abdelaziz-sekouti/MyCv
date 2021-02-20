@@ -33,9 +33,15 @@ body {
 }
 
 @media (max-width: 500px) {
-	.container {
+	.container,
+	.row,
+	.col-xs-12,
+	.panel-group {
 		width: 100px;
 		margin: 0;
 		padding: 0;
+	}
+	img {
+		margin: auto;
 	}
 }
