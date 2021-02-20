@@ -16,7 +16,7 @@ function deploier(e) {
 	else {
 		ancre.forEach(function(anc) {
 			anc.setAttribute('title', '');
-			e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
 		});
+		e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
 	}
 }
