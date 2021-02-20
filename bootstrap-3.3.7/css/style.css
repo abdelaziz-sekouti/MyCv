@@ -1,0 +1,36 @@
+body {
+    background: #ddd;
+}
+
+.hello ul li a {
+    color: #000;
+}
+
+* a {
+    /*    color: #fff;*/
+}
+
+* h4,
+* h1 {
+    /*    background: #0c0;*/
+    /*    color: aliceblue;*/
+    padding: 10px;
+}
+
+.panel-title > a {
+
+    /*    color: aliceblue;*/
+}
+
+.panel-title > a label {
+
+    color: #ccc;
+}
+
+.panel-heading {
+    padding: 0;
+}
+
+.container {
+    margin-top: 70px;
+}
