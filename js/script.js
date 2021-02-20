@@ -11,7 +11,7 @@ function deploier(e) {
 			anc.firstElementChild.classList.add('glyphicon-chevron-right');
 			anc.firstElementChild.classList.remove('glyphicon-chevron-down');
 		});
+		e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
+		e.target.firstElementChild.classList.toggle('glyphicon-chevron-right');
 	}
-	e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
-	e.target.firstElementChild.classList.toggle('glyphicon-chevron-right');
 }
