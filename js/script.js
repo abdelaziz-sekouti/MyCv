@@ -6,13 +6,13 @@ ancre.forEach(function(ht) {
 });
 
 function deploier(e) {
-	if (e.target.firstElementChild.firstElementChild.classList.contains('glyphicon-chevron-right')) {
+	if (e.target.firstElementChild.classList.contains('glyphicon-chevron-right')) {
 		ancre.forEach(function(anc) {
 			anc.firstElementChild.classList.add('glyphicon-chevron-right');
 			anc.firstElementChild.classList.remove('glyphicon-chevron-down');
 		});
 	}
 	else {
-		e.target.firstElementChild.firstElementChild.classList.toggle('glyphicon-chevron-down');
+		e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
 	}
 }
