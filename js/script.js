@@ -10,7 +10,6 @@ ancre.forEach(function(anc) {
 });
 //function to call when  ancre is clicked
 function deploier(e) {
-	console.log(e.target.parentElement.parentElement.nextElementSibling.className);
 	ancre.forEach(function(anc) {
 		//reset chevron right class to all span ancre's child
 		anc.firstElementChild.className = 'glyphicon glyphicon-triangle-right';
