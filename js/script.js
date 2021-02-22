@@ -1,17 +1,17 @@
-var h = document.querySelectorAll('.panel-title');
+//Select all ancre
 var ancre = document.querySelectorAll('.ancre');
-
-ancre.forEach(function(ht) {
-	ht.addEventListener('click', deploier);
+// loop through all ancre
+ancre.forEach(function(anc) {
+	anc.addEventListener('click', deploier);
+	//stop event propagation to child
+	anc.firstElementChild.addEventListener('click', function(e) {
+		e.stopPropagation();
+	});
 });
-
+//function to call when  ancre is clicked
 function deploier(e) {
-	if (e.target.firstElementChild.classList.contains('glyphicon-chevron-right')) {
-		ancre.forEach(function(anc) {
-			anc.firstElementChild.classList.add('glyphicon-chevron-right');
-			anc.firstElementChild.classList.remove('glyphicon-chevron-down');
-		});
-		e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
-		e.target.firstElementChild.classList.toggle('glyphicon-chevron-right');
-	}
+	ancre.forEach(function(anc) {
+		anc.firstElementChild.className = 'glyphicon glyphicon-chevron-right';
+	});
+	e.target.firstElementChild.classList.toggle('glyphicon-chevron-down');
 }

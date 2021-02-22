@@ -22,6 +22,8 @@ body {
 }
 .panel-title > a span {
 	color: #ccc;
+	z-index: 0;
+	cursor: default;
 }
 
 .panel-heading {
