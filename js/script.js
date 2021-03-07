@@ -1,7 +1,10 @@
 //Select all ancre
 var ancre = document.querySelectorAll('.ancre');
+document.querySelector('.ancre:nth-child(1)').parentElement.parentElement.style.backgroundColor = '#030';
+document.querySelector('.ancre:nth-child(1)').parentElement.parentElement.style.color = '#ccc';
 // loop through all ancre
 Array.from(ancre).forEach(function(anc) {
+	// anc.firstElementChild.parentElement.parentElement.style.backgroundColor = '#f00';
 	anc.addEventListener('click', deploier, true);
 	//stop event propagation to child
 	anc.firstElementChild.addEventListener('click', function(e) {
